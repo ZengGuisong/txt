@@ -1,0 +1,428 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 共用區塊 */
+
+*,
+body,
+*::after,
+*::before {
+	box-sizing: border-box;
+	font-weight: bold;
+	font-family: verdana;
+	font-size: 16px;
+	transition: 0.3s;
+}
+
+a {
+	text-decoration: none;
+}
+
+.fa {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.wrap {
+	width: 1040px;
+	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.justify-content-around {
+	justify-content: space-around;
+	flex-direction: row-reverse;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.text-align-right {
+	text-align: right;
+}
+
+.align-items {
+	align-items: center;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.col-5 {
+	width: 520px;
+}
+.col-4{
+	width: 400px;
+}
+.col-3 {
+	width: 300px;
+}
+
+.f-z-l {
+	font-size: 50px;
+}
+
+.f-z-m {
+	font-size: 25px;
+}
+
+.pd-b-s {
+	padding-bottom: 15px;
+}
+
+.pd-b-m {
+	padding-bottom: 30px;
+}
+.pd-b-l{
+	padding-bottom: 60px;
+}
+.mg-t-l {
+	margin-top: 130px;
+}
+
+.mg-t-m {
+	margin-top: 30px;
+}
+
+.mg-b-s {
+	margin-bottom: 15px;
+}
+
+.mg-b-m {
+	margin-bottom: 30px;
+}
+
+.mg-b-l {
+	margin-bottom: 80px;
+}
+
+.mg-l-s {
+	margin-left: 7px;
+}
+
+.mg-l-m {
+	margin-left: 22px;
+}
+.mg-l-l{
+	margin-left: 45px;
+}
+
+.mg-l-xl {
+	margin-left: 150px;
+}
+
+.mg-r-xl {
+	margin-right: 250px;
+}
+
+.Mouth {
+	color: red;
+}
+
+.blue {
+	color: blue;
+}
+.pink{
+	color:#fb56bf;
+}
+
+/* banner區塊 */
+
+.banner {
+	position: relative;
+}
+
+.top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.message a {
+	display: block;
+	color: white;
+}
+
+.message a:hover {
+	color: red;
+	transform: translateY(-5px);
+}
+
+.message a img {
+	vertical-align: middle;
+}
+
+.text img {
+	vertical-align: middle;
+}
+
+/* content區塊 */
+
+.list {
+	border: solid 1px gray;
+	border-radius: 5px;
+	padding: 30px 0;
+	margin: 0 10px;
+	background-color: white;
+}
+
+.list ul li {
+	font-size: 11px;
+	margin-left: 50px;
+	padding-left: 10px;
+	list-style-type: disc;
+	line-height: 1.2;
+}
+
+.bg-color-a {
+	position: relative;
+}
+
+.bg-color-a::before {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #f58d23;
+	height: 8px;
+	border-radius: 0 0 5px 5px;
+}
+
+.bg-color-b::before {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #539e43;
+	height: 8px;
+	border-radius: 0 0 5px 5px;
+}
+
+.bg-color-b {
+	position: relative;
+}
+
+.bg-color-c {
+	position: relative;
+}
+
+.bg-color-c::before {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #6762a6;
+	height: 8px;
+	border-radius: 0 0 5px 5px;
+}
+
+/* Introduction區塊 */
+
+.Introduction {
+	position: relative;
+}
+
+.decorate {
+	border: solid 1px gray;
+	height: 600px;
+}
+
+.decorate-a {
+	position: absolute;
+	top: 10%;
+	left: 0;
+	right: 0;
+	background-image: url(/txt/images/dot-start.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 37px;
+}
+
+.decorate-b {
+	position: absolute;
+	top: 150px;
+	left: 0;
+	right: 0;
+	background-image: url(/txt/images/dot-timeItem.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 28px;
+}
+
+.decorate-c {
+	position: absolute;
+	top: 300px;
+	left: 0;
+	right: 0;
+	background-image: url(/txt/images/dot-timeItem.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 28px;
+}
+
+.decorate-d {
+	position: absolute;
+	top: 450px;
+	left: 0;
+	right: 0;
+	background-image: url(/txt/images/dot-timeItem.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 28px;
+}
+
+.decorate-end {
+	position: absolute;
+	bottom: 0;
+	left: 47.6%;
+	right: 0;
+	border: solid gray 3px;
+	width: 50px;
+}
+
+.move {
+	position: absolute;
+	top: 22%;
+	left: 53%;
+	right: 0;
+}
+
+.decorate-txt p {
+	line-height: 1.2;
+	font-size: 13px;
+}
+
+.lip {
+	border: solid 3px #fb56bf;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.move-a {
+	position: absolute;
+	top: 44%;
+	left: 18%;
+	right: 0;
+}
+
+.move-b {
+	position: absolute;
+	top: 65%;
+	left: 53%;
+	right: 0;
+}
+
+/* Works區塊 */
+
+.bg-a{
+	background-color: pink;
+	background-position: right bottom;
+	background-image: url(/txt/images/logo-work-1.png);
+	background-repeat: no-repeat;
+	height: 150px;
+	border-radius: 6px 6px 0 0;
+}
+.bg-b{
+	background-color: #000;
+	background-position: center;
+	background-image: url(/txt/images/logo-work-2.png);
+	background-repeat: no-repeat;
+	height: 150px;
+	border-radius: 6px 6px 0 0;
+}
+.bg-c{
+	background-color:aquamarine;
+	background-position: center;
+	background-image: url(/txt/images/logo-work-3.png);
+	background-repeat: no-repeat;
+	height: 150px;
+	border-radius: 6px 6px 0 0;
+}
+.Works p {
+	font-size: 13px;
+	color: gray;
+}
+.Works-bg{
+	background-color: white;
+	padding: 10px;
+}
+.Works-list{
+	cursor: pointer;
+	padding: 0 10px;
+}
+.Works-hover:hover{
+	box-shadow: 0px 0px 10px 0px;
+}
+
+.About img{
+	width: 100%;
+}
+.About-list{
+	line-height: 1.5;
+}
+
+/* footer區塊 */
+
+footer{
+	background-image: url(/txt/images/img-Looper-bg.png);
+	padding: 30px 0;
+}
